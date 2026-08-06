@@ -40,7 +40,7 @@ Architecture: iphoneos-arm64
 Maintainer: P1
 Installed-Size: 168
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.iflycrack_0.0.1-1_iphoneos-arm64.deb
+Filename: debs/iflycrack_0.0.1_iphoneos-arm64.deb
 Size: 3920
 MD5sum: 565f099fa7e608bfc79d756ebb6a9fb0
 SHA1: ee071f0faedf5d56a9e378a05223441e516d93b8
