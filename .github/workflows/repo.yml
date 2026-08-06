@@ -1,0 +1,32 @@
+name: Build APT Repo
+
+on:
+  push:
+    paths:
+      - "debs/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt update
+          sudo apt install -y dpkg-dev apt-utils gzip
+
+      - name: Generate Packages
+        run: |
+          dpkg-scanpackages debs /dev/null > Packages
+          gzip -9 -c Packages > Packages.gz
+          apt-ftparchive release . > Release
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add Packages Packages.gz Release
+          git commit -m "Update Packages" || exit 0
+          git push
