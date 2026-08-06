@@ -1,0 +1,52 @@
+Package: com.dpcrack
+Version: 0.0.1-1
+Architecture: iphoneos-arm64
+Maintainer: P1
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/dpcrack_0.0.1_iphoneos-arm64.deb
+Size: 3404
+MD5sum: 6248ff5a30edcf44d0c7ef8643993f85
+SHA1: bd8878dc60e9c2dd201ae7beb6fd3f59288e511d
+SHA256: 506cac21bf4d8fd87d3b998e94648b24d780546e38db61211d38253f204e09c1
+Section: Tweaks
+Description: 屏蔽 DynamicPeninsula 的音频服务
+Author: P1
+Name: DPcrack
+
+Package: com.dpcrack.airpods
+Version: 0.0.2-1
+Architecture: iphoneos-arm64
+Maintainer: P1
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/dpairpods_0.0.2_iphoneos-arm64.deb
+Size: 5596
+MD5sum: 8bc01d1d89cfe82213b85dac2af0371b
+SHA1: eb6e9ae63f0e8d0f0a34f8bebf5c4ca4a11cfe14
+SHA256: 88896bc180145a18cb5a493a97c511e4af87cc2ef83e96d60613477ba8ff0ecb
+Section: Tweaks
+Description: 为DynamicPeninsula插件添加功能，每个版本都是独立的，新版本没有旧版功能。当前版本：0.0.2
+ .
+  - 0.0.1:仅屏蔽音乐服务
+ .
+  - 0.0.2:增加连接蓝牙耳机视图（耳机名不能太长）
+Author: P1
+Name: DPcrack
+
+Package: com.iflycrack
+Version: 0.0.1-1
+Architecture: iphoneos-arm64
+Maintainer: P1
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.iflycrack_0.0.1-1_iphoneos-arm64.deb
+Size: 3920
+MD5sum: 565f099fa7e608bfc79d756ebb6a9fb0
+SHA1: ee071f0faedf5d56a9e378a05223441e516d93b8
+SHA256: 49d7cd15af57a686628dfe74f02cbc4dc2b62f96764a55ffbf21b6016b511dd5
+Section: Tweaks
+Description: 屏蔽讯飞输入法软件的切换输入法弹窗
+Author: P1
+Name: IFlycrack
+
