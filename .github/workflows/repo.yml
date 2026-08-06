@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "debs/**"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,12 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Install tools
         run: |
-          sudo apt update
-          sudo apt install -y dpkg-dev apt-utils gzip
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev apt-utils gzip
 
       - name: Generate Packages
         run: |
@@ -26,10 +30,18 @@ jobs:
           gzip -9 -c Packages > Packages.gz
           apt-ftparchive release . > Release
 
-      - name: Commit
+      - name: Commit and Push
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add Packages Packages.gz Release
-          git commit -m "Update Packages" || exit 0
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update APT repository"
+
+          git push origin HEAD:main
