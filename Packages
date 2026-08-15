@@ -20,7 +20,7 @@ Architecture: iphoneos-arm64
 Maintainer: P1
 Installed-Size: 168
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/dpairpods_0.0.2_iphoneos-arm64.deb
+Filename: debs/dpcrack_0.0.2_iphoneos-arm64.deb
 Size: 5596
 MD5sum: 8bc01d1d89cfe82213b85dac2af0371b
 SHA1: eb6e9ae63f0e8d0f0a34f8bebf5c4ca4a11cfe14
