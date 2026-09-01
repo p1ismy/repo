@@ -50,19 +50,3 @@ Description: 屏蔽讯飞输入法软件的切换输入法弹窗
 Author: P1
 Name: IFlycrack
 
-Package: com.swipeselectionfix
-Version: 0.0.1-3
-Architecture: iphoneos-arm64e
-Maintainer: P1
-Installed-Size: 168
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/SwipeSelectionFix_0.0.1-3_iphoneos-arm64e.deb
-Size: 6004
-MD5sum: b38ed00f851c8ebd42db5b6f60d66d74
-SHA1: 32ddba48b2e7329ec3f68f36582548fcd0bfee3d
-SHA256: f2bda677e767c0536d0d200a1cb8331c75079ccf5a9b8569920350a456aad535
-Section: Tweaks
-Description: 修复数字面板按键和emoji按键触发失效
-Author: P1
-Name: SwipeSelectionFix
-
