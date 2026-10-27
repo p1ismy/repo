@@ -4,7 +4,7 @@ Architecture: iphoneos-arm64e
 Maintainer: P1
 Installed-Size: 168
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.autolowpower_1.0.0-4_iphoneos-arm64e.deb
+Filename: debs/autolowpower_1.0.0-4_iphoneos-arm64e.deb
 Size: 4506
 MD5sum: 483332401d2299f8218f8d6dba42d430
 SHA1: e12b60ddd02223066ecc35231c7c8c44da834a13
